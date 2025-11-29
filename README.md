@@ -68,3 +68,56 @@ Python 3.7+：
 Ollama：https://ollama.com/
 
 FFmpeg（Whisper 依赖）：https://ffmpeg.org/
+
+
+
+📦安装步骤
+
+1. 安装 Python 依赖库
+
+【bash】
+
+pip install openai-whisper pyaudio PyQt5 pynput requests numpy
+
+2. 安装 Ollama
+   
+（1）访问 Ollama官网 下载安装包
+
+（2）运行安装程序
+
+（3）打开命令提示符，拉取模型：
+
+【bash】
+
+ollama pull qwen2.5:3b
+
+3.安装 FFmpeg（Whisper 依赖）
+
+（1）下载 FFmpeg：  https://ffmpeg.org/download.html
+
+（2）解压到 C:\ffmpeg\
+
+（3）添加 C:\ffmpeg\bin 到系统 PATH 环境变量
+
+🚀 使用指南
+
+1.启动 Ollama 服务
+
+【bash】
+
+ollama serve
+
+2.运行主程序
+
+【bash】
+
+python translation.py
+
+3.音频设备设置
+
+点击"音频设备"按钮
+
+选择"立体声混音"或您的麦克风设备
+
+点击"确定"
+
