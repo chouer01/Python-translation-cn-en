@@ -89,7 +89,7 @@ pip install openai-whisper pyaudio PyQt5 pynput requests numpy
 
 【bash】
 
-ollama pull qwen2.5:3b
+ollama pull qwen2.5:3b               【小技巧：若运行到最后，下载速度只有几KB/S，可以通过快速禁用网卡，再打开网卡，使下载速度提高】
 
 3.安装 FFmpeg（Whisper 依赖）
 
@@ -118,6 +118,10 @@ python translation.py
 点击"音频设备"按钮
 
 选择"立体声混音"或您的麦克风设备
+
+4.可以通过代码中参数设置，使声音采集率提高
+
+代码片段【默认是在第40行代码】：self.silence_threshold = 40  # 降低阈值，更容易触发
 
 点击"确定"
 
